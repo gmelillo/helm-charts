@@ -4,7 +4,7 @@
 
 A Helm chart that deploy docker registry garbage collector cronjob
 
-**Homepage:** <https://github.com/gmelillo/registry>
+**Homepage:** <https://github.com/gmelillo/helm-charts>
 
 ## Maintainers
 
