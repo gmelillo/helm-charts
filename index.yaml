@@ -3,6 +3,29 @@ entries:
   docker-registry-browser:
   - apiVersion: v2
     appVersion: 1.3.5
+    created: "2020-10-28T01:21:57.579106182Z"
+    description: A Helm chart for Kubernetes
+    digest: c14f9ecff15bd2db59da1488cd9038ac0f410b7dcf2bfdccb49cf83336ca56e6
+    home: https://github.com/gmelillo/helm-charts
+    keywords:
+    - registry
+    - docker
+    - cronjob
+    - garbage-collector
+    - kubernetes
+    - k8s
+    maintainers:
+    - email: gabriel@melillo.me
+      name: gabriel
+    name: docker-registry-browser
+    sources:
+    - https://github.com/klausmeyer/docker-registry-browser
+    type: application
+    urls:
+    - https://github.com/gmelillo/helm-charts/releases/download/docker-registry-browser-0.1.1/docker-registry-browser-0.1.1.tgz
+    version: 0.1.1
+  - apiVersion: v2
+    appVersion: 1.3.5
     created: "2020-10-28T00:40:14.713309238Z"
     description: A Helm chart for Kubernetes
     digest: 2c02d23a708b1b2c2816d5b55536b23875fcd86f2f52879049ca5cddad52a939
@@ -25,6 +48,29 @@ entries:
     - https://github.com/gmelillo/helm-charts/releases/download/docker-registry-browser-0.1.0/docker-registry-browser-0.1.0.tgz
     version: 0.1.0
   docker-registry-gc:
+  - apiVersion: v2
+    appVersion: 0.1.4
+    created: "2020-10-28T01:21:57.816175106Z"
+    description: A Helm chart that deploy docker registry garbage collector cronjob
+    digest: fa76989c01c0ea584cc055e8164fe664ba5e5d96d552aba758cb8d8076ce137f
+    home: https://github.com/gmelillo/helm-charts
+    keywords:
+    - registry
+    - docker
+    - cronjob
+    - garbage-collector
+    - kubernetes
+    - k8s
+    maintainers:
+    - email: gabriel@melillo.me
+      name: gabriel
+    name: docker-registry-gc
+    sources:
+    - https://github.com/gmelillo/registry
+    type: application
+    urls:
+    - https://github.com/gmelillo/helm-charts/releases/download/docker-registry-gc-0.1.5/docker-registry-gc-0.1.5.tgz
+    version: 0.1.5
   - apiVersion: v2
     appVersion: 0.1.4
     created: "2020-10-28T00:04:12.137540519Z"
