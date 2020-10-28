@@ -4,6 +4,18 @@
 
 A Helm chart for Kubernetes
 
+**Homepage:** <https://github.com/gmelillo/helm-charts>
+
+## Maintainers
+
+| Name | Email | Url |
+| ---- | ------ | --- |
+| gabriel | gabriel@melillo.me |  |
+
+## Source Code
+
+* <https://github.com/klausmeyer/docker-registry-browser>
+
 ## Values
 
 | Key | Type | Default | Description |
