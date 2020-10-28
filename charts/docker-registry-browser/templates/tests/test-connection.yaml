@@ -11,5 +11,5 @@ spec:
     - name: wget
       image: busybox
       command: ['wget']
-      args: ['{{ include "docker-reegistry-browser.fullname" . }}:{{ .Values.service.port }}']
+      args: ['{{ include "docker-reegistry-browser.fullname" . }}:{{ .Values.service.port }}/robots.txt']
   restartPolicy: Never
