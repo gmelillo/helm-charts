@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: "{{ include "docker-reegistry-browser.fullname" . }}-test-connection"
+  labels:
+    {{- include "docker-reegistry-browser.labels" . | nindent 4 }}
+  annotations:
+    "helm.sh/hook": test-success
+spec:
+  containers:
+    - name: wget
+      image: busybox
+      command: ['wget']
+      args: ['{{ include "docker-reegistry-browser.fullname" . }}:{{ .Values.service.port }}']
+  restartPolicy: Never
