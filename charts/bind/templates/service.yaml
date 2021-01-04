@@ -1,0 +1,19 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: {{ include "bind.fullname" . }}
+  labels:
+    {{- include "bind.labels" . | nindent 4 }}
+spec:
+  type: {{ .Values.service.type }}
+  ports:
+    - port: {{ .Values.service.port }}
+      targetPort: namedtcp
+      protocol: TCP
+      name: namedtcp
+    - port: {{ .Values.service.port }}
+      targetPort: namedudp
+      protocol: UDP
+      name: namedudp
+  selector:
+    {{- include "bind.selectorLabels" . | nindent 4 }}
