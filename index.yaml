@@ -94,4 +94,15 @@ entries:
     urls:
     - https://github.com/gmelillo/helm-charts/releases/download/docker-registry-gc-0.1.4/docker-registry-gc-0.1.4.tgz
     version: 0.1.4
+  ovpn-web-connector:
+  - apiVersion: v2
+    appVersion: "2021-01-04"
+    created: "2021-01-04T16:22:46.227821551Z"
+    description: A Helm chart for Kubernetes
+    digest: 73ae2a3ca0665848d688fb6711efac6430efd83785d52ee0e59a944cd39af76e
+    name: ovpn-web-connector
+    type: application
+    urls:
+    - https://github.com/gmelillo/helm-charts/releases/download/ovpn-web-connector-0.1.0/ovpn-web-connector-0.1.0.tgz
+    version: 0.1.0
 generated: "2020-10-28T00:04:12.059980172Z"
