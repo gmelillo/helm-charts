@@ -1,6 +1,14 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": ["github>renovatebot/presets-internal"],
+  "postUpgradeTasks": {
+    "commands": [
+      "curl -L \"https://github.com/norwoodj/helm-docs/releases/download/v1.4.0/helm-docs_1.4.0_$(uname -s)_$(uname -m).tar.gz\" | tar -xz helm-docs",
+      "chmod +x ./helm-docs",
+      "./helm-docs --template-files=./charts/README.md.gotmpl",
+      "rm ./helm-docs"
+    ]
+  },
   "regexManagers": [
     {
       "fileMatch": ["(^|/)charts/docker-registry-gc/Chart.yaml$"],
@@ -9,33 +17,21 @@
       "datasourceTemplate": "docker"
     },
     {
-      "fileMatch": ["(^|/)charts/docker-registry-gc/Chart.yaml$"],
-      "matchStrings": ["version: '(?<currentValue>.*?)'\n"],
-      "depNameTemplate": "gmelillo/registry",
+      "fileMatch": ["(^|/)charts/bind /Chart.yaml$"],
+      "matchStrings": ["appVersion: '(?<currentValue>.*?)'\n"],
+      "depNameTemplate": "gmelillo/bind9",
       "datasourceTemplate": "docker"
     },
     {
-      "fileMatch": ["(^|/)charts/docker-registry-gc/README.md$"],
-      "matchStrings": ["Current chart version is `(?<currentValue>.*?)`\n"],
-      "depNameTemplate": "gmelillo/registry",
+      "fileMatch": ["(^|/)charts/docker-registry-browser/Chart.yaml$"],
+      "matchStrings": ["appVersion: '(?<currentValue>.*?)'\n"],
+      "depNameTemplate": "klausmeyer/docker-registry-browser",
+      "datasourceTemplate": "docker"
+    },{
+      "fileMatch": ["(^|/)charts/ovpn-web-connector/Chart.yaml$"],
+      "matchStrings": ["appVersion: '(?<currentValue>.*?)'\n"],
+      "depNameTemplate": "gmelillo/nginx",
       "datasourceTemplate": "docker"
     },
-    {
-      "fileMatch": ["(^|/)charts/docker-registry-gc/README.md$"],
-      "matchStrings": [
-        "\\| image.tag \\| string \\| `\"(?<currentValue>.*?)\"` \\|  \\|\n"
-      ],
-      "depNameTemplate": "gmelillo/registry",
-      "datasourceTemplate": "docker"
-    }
   ],
-  "packageRules": [
-    {
-      "description": "Automerge gmelillo/registry minor and patch updates",
-      "packageNames": ["gmelillo/registry"],
-      "updateTypes": ["major", "minor", "patch"],
-      "automergeType": "branch",
-      "automerge": true
-    }
-  ]
 }
