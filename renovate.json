@@ -32,6 +32,6 @@
       "matchStrings": ["appVersion: '(?<currentValue>.*?)'\n"],
       "depNameTemplate": "gmelillo/nginx",
       "datasourceTemplate": "docker"
-    },
-  ],
+    }
+  ]
 }
