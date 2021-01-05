@@ -74,6 +74,29 @@ entries:
     version: 0.1.0
   docker-registry-gc:
   - apiVersion: v2
+    appVersion: 0.1.5
+    created: "2021-01-05T11:34:35.620910489Z"
+    description: A Helm chart that deploy docker registry garbage collector cronjob
+    digest: 80febc17dd7cf2d4ecf31d9dd1b593125cd5918c565e95754c4805423d397aeb
+    home: https://github.com/gmelillo/helm-charts
+    keywords:
+    - registry
+    - docker
+    - cronjob
+    - garbage-collector
+    - kubernetes
+    - k8s
+    maintainers:
+    - email: gabriel@melillo.me
+      name: gabriel
+    name: docker-registry-gc
+    sources:
+    - https://github.com/gmelillo/registry
+    type: application
+    urls:
+    - https://github.com/gmelillo/helm-charts/releases/download/docker-registry-gc-0.1.6/docker-registry-gc-0.1.6.tgz
+    version: 0.1.6
+  - apiVersion: v2
     appVersion: 0.1.4
     created: "2020-10-28T01:21:57.816175106Z"
     description: A Helm chart that deploy docker registry garbage collector cronjob
