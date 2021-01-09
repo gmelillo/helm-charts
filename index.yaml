@@ -144,6 +144,16 @@ entries:
     version: 0.1.4
   ovpn-web-connector:
   - apiVersion: v2
+    appVersion: "2021-01-09"
+    created: "2021-01-09T21:32:25.010711064Z"
+    description: A Helm chart for Kubernetes
+    digest: 45d2be6508c19e140c4face2b315dc6da4bd74f7910c346e17531a5dc897fda6
+    name: ovpn-web-connector
+    type: application
+    urls:
+    - https://github.com/gmelillo/helm-charts/releases/download/ovpn-web-connector-0.2.0/ovpn-web-connector-0.2.0.tgz
+    version: 0.2.0
+  - apiVersion: v2
     appVersion: "2021-01-04"
     created: "2021-01-04T16:22:46.227821551Z"
     description: A Helm chart for Kubernetes
