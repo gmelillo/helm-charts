@@ -142,6 +142,17 @@ entries:
     urls:
     - https://github.com/gmelillo/helm-charts/releases/download/docker-registry-gc-0.1.4/docker-registry-gc-0.1.4.tgz
     version: 0.1.4
+  mailu:
+  - apiVersion: v1
+    appVersion: "1.8"
+    created: "2021-04-13T22:37:32.262485783Z"
+    description: Mailu mail system
+    digest: aa9f9f333682658d28a9effd93483cf942c88d2189333ce92bedb456d62af221
+    icon: https://mailu.io/master/_images/logo.png
+    name: mailu
+    urls:
+    - https://github.com/gmelillo/helm-charts/releases/download/mailu-0.1.0/mailu-0.1.0.tgz
+    version: 0.1.0
   ovpn-web-connector:
   - apiVersion: v2
     appVersion: "2021-01-09"
@@ -163,4 +174,4 @@ entries:
     urls:
     - https://github.com/gmelillo/helm-charts/releases/download/ovpn-web-connector-0.1.0/ovpn-web-connector-0.1.0.tgz
     version: 0.1.0
-generated: "2020-10-28T00:04:12.059980172Z"
+generated: "2021-04-13T22:37:32.262501583Z"
