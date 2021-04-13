@@ -88,7 +88,7 @@ persistence:
 subnet: 10.42.0.0/16
 
 # Version of mailu docker images to use when not specified otherwise
-mailuVersion: 1.8
+mailuVersion: latest
 
 # default log level. can be overridden globally or per service
 logLevel: WARNING
@@ -114,7 +114,7 @@ ingress:
 front:
   # logLevel: WARNING
   image:
-    repository: mailu/nginx
+    repository: testingmultiarch/nginx
     # tag defaults to mailuVersion
     # tag: master
   resources:
@@ -131,7 +131,7 @@ front:
 admin:
   # logLevel: WARNING
   image:
-    repository: mailu/admin
+    repository: testingmultiarch/admin
     # tag defaults to mailuVersion
     # tag: master
   resources:
@@ -158,7 +158,7 @@ redis:
 postfix:
   # logLevel: WARNING
   image:
-    repository: mailu/postfix
+    repository: testingmultiarch/postfix
     # tag defaults to mailuVersion
     # tag: master
   resources:
@@ -173,7 +173,7 @@ dovecot:
   enabled: true
   # logLevel: WARNING
   image:
-    repository: mailu/dovecot
+    repository: testingmultiarch/dovecot
     # tag defaults to mailuVersion
     # tag: master
   resources:
@@ -196,7 +196,7 @@ dovecot:
 rspamd:
   # logLevel: WARNING
   image:
-    repository: mailu/rspamd
+    repository: testingmultiarch/rspamd
     # tag defaults to mailuVersion
     # tag: master
   resources:
@@ -211,7 +211,7 @@ clamav:
   enabled: true
   # logLevel: WARNING
   image:
-    repository: mailu/clamav
+    repository: testingmultiarch/clamav
     # tag defaults to mailuVersion
     # tag: master
   resources:
@@ -226,7 +226,7 @@ roundcube:
   enabled: true
   # logLevel: WARNING
   image:
-    repository: mailu/roundcube
+    repository: testingmultiarch/roundcube
     # tag defaults to mailuVersion
     # tag: master
   resources:
@@ -242,7 +242,7 @@ webdav:
   enabled: false
   # logLevel: WARNING
   image:
-    repository: mailu/radicale
+    repository: testingmultiarch/radicale
     # tag defaults to mailuVersion
     # tag: master
 

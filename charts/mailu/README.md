@@ -1,6 +1,6 @@
 # mailu
 
-![Version: 0.1.0](https://img.shields.io/badge/Version-0.1.0-informational?style=flat-square) ![AppVersion: 1.8](https://img.shields.io/badge/AppVersion-1.8-informational?style=flat-square)
+![Version: 0.1.3](https://img.shields.io/badge/Version-0.1.3-informational?style=flat-square) ![AppVersion: 1.8](https://img.shields.io/badge/AppVersion-1.8-informational?style=flat-square)
 
 Mailu mail system
 
@@ -23,7 +23,7 @@ helm install --generate-name gmelillo/mailu
 
 | Key | Type | Default | Description |
 |-----|------|---------|-------------|
-| admin.image.repository | string | `"mailu/admin"` |  |
+| admin.image.repository | string | `"testingmultiarch/admin"` |  |
 | admin.podAnnotations | object | `{}` |  |
 | admin.resources.limits.cpu | string | `"500m"` |  |
 | admin.resources.limits.memory | string | `"500Mi"` |  |
@@ -34,7 +34,7 @@ helm install --generate-name gmelillo/mailu
 | certmanager.issuerName | string | `"letsencrypt"` |  |
 | certmanager.issuerType | string | `"ClusterIssuer"` |  |
 | clamav.enabled | bool | `true` |  |
-| clamav.image.repository | string | `"mailu/clamav"` |  |
+| clamav.image.repository | string | `"testingmultiarch/clamav"` |  |
 | clamav.resources.limits.cpu | string | `"1000m"` |  |
 | clamav.resources.limits.memory | string | `"2Gi"` |  |
 | clamav.resources.requests.cpu | string | `"1000m"` |  |
@@ -45,14 +45,14 @@ helm install --generate-name gmelillo/mailu
 | database.roundcubeType | string | `"sqlite"` |  |
 | database.type | string | `"sqlite"` |  |
 | dovecot.enabled | bool | `true` |  |
-| dovecot.image.repository | string | `"mailu/dovecot"` |  |
+| dovecot.image.repository | string | `"testingmultiarch/dovecot"` |  |
 | dovecot.resources.limits.cpu | string | `"500m"` |  |
 | dovecot.resources.limits.memory | string | `"500Mi"` |  |
 | dovecot.resources.requests.cpu | string | `"500m"` |  |
 | dovecot.resources.requests.memory | string | `"500Mi"` |  |
 | external_relay | object | `{}` |  |
 | front.controller.kind | string | `"Deployment"` |  |
-| front.image.repository | string | `"mailu/nginx"` |  |
+| front.image.repository | string | `"testingmultiarch/nginx"` |  |
 | front.resources.limits.cpu | string | `"200m"` |  |
 | front.resources.limits.memory | string | `"200Mi"` |  |
 | front.resources.requests.cpu | string | `"100m"` |  |
@@ -64,7 +64,7 @@ helm install --generate-name gmelillo/mailu
 | logLevel | string | `"WARNING"` |  |
 | mail.authRatelimit | string | `"10/minute;1000/hour"` |  |
 | mail.messageSizeLimitInMegabytes | int | `50` |  |
-| mailuVersion | float | `1.8` |  |
+| mailuVersion | string | `"latest"` |  |
 | mysql.image.repository | string | `"library/mariadb"` |  |
 | mysql.image.tag | string | `"10.4.10"` |  |
 | mysql.resources.limits.cpu | string | `"200m"` |  |
@@ -75,7 +75,7 @@ helm install --generate-name gmelillo/mailu
 | nodeSelector | object | `{}` |  |
 | persistence.accessMode | string | `"ReadWriteOnce"` |  |
 | persistence.size | string | `"100Gi"` |  |
-| postfix.image.repository | string | `"mailu/postfix"` |  |
+| postfix.image.repository | string | `"testingmultiarch/postfix"` |  |
 | postfix.resources.limits.cpu | string | `"500m"` |  |
 | postfix.resources.limits.memory | string | `"2Gi"` |  |
 | postfix.resources.requests.cpu | string | `"500m"` |  |
@@ -87,12 +87,12 @@ helm install --generate-name gmelillo/mailu
 | redis.resources.requests.cpu | string | `"100m"` |  |
 | redis.resources.requests.memory | string | `"200Mi"` |  |
 | roundcube.enabled | bool | `true` |  |
-| roundcube.image.repository | string | `"mailu/roundcube"` |  |
+| roundcube.image.repository | string | `"testingmultiarch/roundcube"` |  |
 | roundcube.resources.limits.cpu | string | `"200m"` |  |
 | roundcube.resources.limits.memory | string | `"200Mi"` |  |
 | roundcube.resources.requests.cpu | string | `"100m"` |  |
 | roundcube.resources.requests.memory | string | `"100Mi"` |  |
-| rspamd.image.repository | string | `"mailu/rspamd"` |  |
+| rspamd.image.repository | string | `"testingmultiarch/rspamd"` |  |
 | rspamd.resources.limits.cpu | string | `"200m"` |  |
 | rspamd.resources.limits.memory | string | `"200Mi"` |  |
 | rspamd.resources.requests.cpu | string | `"100m"` |  |
@@ -100,4 +100,4 @@ helm install --generate-name gmelillo/mailu
 | subnet | string | `"10.42.0.0/16"` |  |
 | tolerations | object | `{}` |  |
 | webdav.enabled | bool | `false` |  |
-| webdav.image.repository | string | `"mailu/radicale"` |  |
+| webdav.image.repository | string | `"testingmultiarch/radicale"` |  |
