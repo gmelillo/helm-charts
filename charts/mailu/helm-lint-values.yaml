@@ -74,6 +74,7 @@ webdav:
     tag: master
 
 fetchmail:
+  enabled: true
   logLevel: WARNING
   image:
     tag: master
