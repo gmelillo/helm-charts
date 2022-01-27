@@ -14,6 +14,19 @@ entries:
   docker-registry:
   - apiVersion: v2
     appVersion: 2.7.1
+    created: "2022-01-27T11:14:17.440780088Z"
+    description: Fork from stable Docker Registry chart
+    digest: 04724df6ac57cd812d5d5f7001ec9961fa7f9be5b3afb7fc67315e86a7bf61a8
+    home: https://hub.docker.com/_/registry/
+    icon: https://helm.melillo.me/docker-registry-logo.png
+    name: docker-registry
+    sources:
+    - https://github.com/docker/distribution-library-image
+    urls:
+    - https://github.com/gmelillo/helm-charts/releases/download/docker-registry-1.9.7/docker-registry-1.9.7.tgz
+    version: 1.9.7
+  - apiVersion: v2
+    appVersion: 2.7.1
     created: "2021-01-04T17:06:11.497766817Z"
     description: Fork from stable Docker Registry chart
     digest: 4606357eb927b1fd21fa7eff4ac69cbd47665640019d838dafd703a4d7caa5e9
@@ -145,6 +158,16 @@ entries:
   mailu:
   - apiVersion: v1
     appVersion: "1.8"
+    created: "2022-01-27T11:14:17.526943433Z"
+    description: Mailu mail system fork with images working for AMD64+ARM64
+    digest: 0411f4465162c09faae6e303aeb07235c46de358111040b6dec28109814cef30
+    icon: https://mailu.io/master/_images/logo.png
+    name: mailu
+    urls:
+    - https://github.com/gmelillo/helm-charts/releases/download/mailu-0.2.4/mailu-0.2.4.tgz
+    version: 0.2.4
+  - apiVersion: v1
+    appVersion: "1.8"
     created: "2021-04-23T23:46:54.000726888Z"
     description: Mailu mail system fork with images working for AMD64+ARM64
     digest: ef7c6c8508184d7f01c36133e914a7e6dc94d47d63d54c17d3fe1b748afaa471
@@ -234,4 +257,4 @@ entries:
     urls:
     - https://github.com/gmelillo/helm-charts/releases/download/ovpn-web-connector-0.1.0/ovpn-web-connector-0.1.0.tgz
     version: 0.1.0
-generated: "2021-04-23T23:46:54.000761888Z"
+generated: "2022-01-27T11:14:17.526989934Z"
