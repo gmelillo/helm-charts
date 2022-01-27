@@ -1,7 +1,7 @@
 apiVersion: v2
 description: Fork from stable Docker Registry chart
 name: docker-registry
-version: 1.9.6
+version: 1.9.7
 appVersion: 2.7.1
 home: https://hub.docker.com/_/registry/
 icon: https://helm.melillo.me/docker-registry-logo.png

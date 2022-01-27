@@ -1,6 +1,6 @@
 # docker-registry
 
-![Version: 1.9.6](https://img.shields.io/badge/Version-1.9.6-informational?style=flat-square) ![AppVersion: 2.7.1](https://img.shields.io/badge/AppVersion-2.7.1-informational?style=flat-square)
+![Version: 1.9.7](https://img.shields.io/badge/Version-1.9.7-informational?style=flat-square) ![AppVersion: 2.7.1](https://img.shields.io/badge/AppVersion-2.7.1-informational?style=flat-square)
 
 Fork from stable Docker Registry chart
 
