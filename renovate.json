@@ -8,7 +8,9 @@
       "chmod +x ./helm-docs",
       "./helm-docs --template-files=./charts/README.md.gotmpl",
       "rm ./helm-docs"
-    ]
+    ],
+    "fileFilters": ["**/*"],
+    "executionMode": "update"
   },
   "regexManagers": [
     {
