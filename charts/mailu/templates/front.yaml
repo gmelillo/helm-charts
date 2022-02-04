@@ -91,6 +91,12 @@ spec:
           {{- end }}
           - name: SUBNET
             value: {{ .Values.subnet }}
+          {{- if .Values.ingress.realIpHeader }}
+          - name: REAL_IP_HEADER
+            value: {{ .Values.ingress.realIpHeader }}
+          - name: REAL_IP_FROM
+            value: {{ default "0.0.0.0/0" .Values.ingress.realIpFrom }}
+          {{- end }}
         ports:
           - name: pop3
             containerPort: 110
