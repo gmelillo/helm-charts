@@ -2,16 +2,6 @@
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": ["github>renovatebot/presets-internal"],
   "prHourlyLimit": 0,
-  "postUpgradeTasks": {
-    "commands": [
-      "curl -L \"https://github.com/norwoodj/helm-docs/releases/download/v1.4.0/helm-docs_1.4.0_$(uname -s)_$(uname -m).tar.gz\" | tar -xz helm-docs",
-      "chmod +x ./helm-docs",
-      "./helm-docs --template-files=./charts/README.md.gotmpl",
-      "rm ./helm-docs"
-    ],
-    "fileFilters": ["**/*"],
-    "executionMode": "update"
-  },
   "regexManagers": [
     {
       "fileMatch": ["(^|/)charts/docker-registry-gc/Chart.yaml$"],
