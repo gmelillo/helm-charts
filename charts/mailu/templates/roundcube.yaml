@@ -90,18 +90,28 @@ spec:
         {{- .|toYaml|nindent 10}}
         {{- end }}
         livenessProbe:
-          httpGet:
-            path: /
-            port: http
-          periodSeconds: 5
+          exec:
+            command:
+              - curl
+              - -f
+              - -L
+              - -H
+              - "User-Agent: health"
+              - http://localhost/
+          periodSeconds: 10
           failureThreshold: 30
           timeoutSeconds: 5
         readinessProbe:
-          httpGet:
-            path: /
-            port: http
+          exec:
+            command:
+              - curl
+              - -f
+              - -L
+              - -H
+              - "User-Agent: health"
+              - http://localhost/
           periodSeconds: 10
-          failureThreshold: 1
+          failureThreshold: 30
           timeoutSeconds: 5
       volumes:
         - name: data
