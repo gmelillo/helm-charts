@@ -80,15 +80,15 @@ spec:
           httpGet:
             path: /
             port: rspamd-http
-          periodSeconds: 5
-          failureThreshold: 30
+          periodSeconds: 10
+          failureThreshold: 90
           timeoutSeconds: 5
         readinessProbe:
           httpGet:
             path: /
             port: rspamd-http
           periodSeconds: 10
-          failureThreshold: 1
+          failureThreshold: 90
           timeoutSeconds: 5
       volumes:
         - name: data
