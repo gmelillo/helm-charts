@@ -1,6 +1,6 @@
 apiVersion: v1
-appVersion: "1.9.12"
+appVersion: "1.9.14"
 description: Mailu mail system fork with images working for AMD64+ARM64
 name: mailu
-version: 0.2.9
+version: 0.2.10
 icon: https://mailu.io/master/_images/logo.png
