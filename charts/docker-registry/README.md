@@ -1,6 +1,6 @@
 # docker-registry
 
-![Version: 1.9.7](https://img.shields.io/badge/Version-1.9.7-informational?style=flat-square) ![AppVersion: 2.7.1](https://img.shields.io/badge/AppVersion-2.7.1-informational?style=flat-square)
+![Version: 1.9.8](https://img.shields.io/badge/Version-1.9.8-informational?style=flat-square) ![AppVersion: 2.8.0](https://img.shields.io/badge/AppVersion-2.8.0-informational?style=flat-square)
 
 Fork from stable Docker Registry chart
 
@@ -42,7 +42,7 @@ helm install --generate-name gmelillo/docker-registry
 | extraVolumes | list | `[]` |  |
 | image.pullPolicy | string | `"IfNotPresent"` |  |
 | image.repository | string | `"registry"` |  |
-| image.tag | string | `"2.7.1"` |  |
+| image.tag | string | `"2.8.0"` |  |
 | ingress.annotations | object | `{}` |  |
 | ingress.enabled | bool | `false` |  |
 | ingress.hosts[0] | string | `"chart-example.local"` |  |
