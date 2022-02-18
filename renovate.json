@@ -25,6 +25,12 @@
       "matchStrings": ["appVersion: '(?<currentValue>.*?)'\n"],
       "depNameTemplate": "gmelillo/nginx",
       "datasourceTemplate": "docker"
+    },
+    {
+      "fileMatch": ["(^|/).github/helm-docs.sh$"],
+      "matchStrings": ['HELM_DOCS_VERSION="(?<currentValue>.*?)"'],
+      "depNameTemplate": "norwoodj/helm-docs",
+      "datasourceTemplate": "github-releases"
     }
   ]
 }
