@@ -28,7 +28,7 @@
     },
     {
       "fileMatch": ["(^|/).github/helm-docs.sh$"],
-      "matchStrings": ['HELM_DOCS_VERSION="(?<currentValue>.*?)"'],
+      "matchStrings": ["HELM_DOCS_VERSION=\"(?<currentValue>.*?)\""],
       "depNameTemplate": "norwoodj/helm-docs",
       "datasourceTemplate": "github-releases"
     }
