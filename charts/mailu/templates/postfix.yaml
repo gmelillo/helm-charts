@@ -30,7 +30,7 @@ spec:
       {{- end }}
       containers:
       - name: postfix
-        image: {{ .Values.postfix.image.repository }}:{{ default .Values.mailuVersion .Values.postfix.image.tag }}
+        image: {{ .Values.postfix.image.repository }}:{{ include "mailu.tag" . }}
         imagePullPolicy: Always
         volumeMounts:
           - mountPath: /queue

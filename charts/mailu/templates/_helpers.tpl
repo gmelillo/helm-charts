@@ -56,3 +56,14 @@ app.kubernetes.io/version: {{ .Chart.AppVersion | quote }}
 {{- end }}
 app.kubernetes.io/managed-by: {{ .Release.Service }}
 {{- end -}}
+
+{{/*
+Image version
+*/}}
+{{- define "mailu.tag" -}}
+{{- if .Values.mailuVersion }}
+{{- .Values.mailuVersion }}
+{{- else }}
+{{- .Chart.AppVersion }}
+{{- end }}
+{{- end }}
