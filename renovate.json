@@ -37,6 +37,12 @@
       "matchStrings": ["KUBEVAL_VERSION=\"(?<currentValue>.*?)\""],
       "depNameTemplate": "instrumenta/kubeval",
       "datasourceTemplate": "github-releases"
+    },
+    {
+      "fileMatch": ["(^|/)charts/mailu/Chart.yaml$"],
+      "matchStrings": ["appVersion: '(?<currentValue>.*?)'\n"],
+      "depNameTemplate": "Mailu/Mailu",
+      "datasourceTemplate": "github-releases"
     }
   ]
 }
