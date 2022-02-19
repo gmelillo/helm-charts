@@ -1,8 +1,10 @@
 # mailu
 
-![Version: 0.3.0](https://img.shields.io/badge/Version-0.3.0-informational?style=flat-square) ![AppVersion: 1.9.17](https://img.shields.io/badge/AppVersion-1.9.17-informational?style=flat-square)
+![Version: 1.0.0](https://img.shields.io/badge/Version-1.0.0-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: 1.9.17](https://img.shields.io/badge/AppVersion-1.9.17-informational?style=flat-square)
 
 Mailu mail system fork with images working for AMD64+ARM64
+
+**Homepage:** <https://github.com/gmelillo/helm-charts>
 
 ## Installation
 
@@ -18,6 +20,16 @@ helm repo update
 ```shell
 helm install --generate-name gmelillo/mailu
 ```
+
+## Maintainers
+
+| Name | Email | Url |
+| ---- | ------ | --- |
+| gabriel | gabriel@melillo.me |  |
+
+## Source Code
+
+* <https://github.com/Mailu/Mailu>
 
 ## Values
 
