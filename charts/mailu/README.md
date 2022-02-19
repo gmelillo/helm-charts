@@ -1,6 +1,6 @@
 # mailu
 
-![Version: 1.0.1](https://img.shields.io/badge/Version-1.0.1-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: 1.9.18](https://img.shields.io/badge/AppVersion-1.9.18-informational?style=flat-square)
+![Version: 1.0.2](https://img.shields.io/badge/Version-1.0.2-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: 1.9.18](https://img.shields.io/badge/AppVersion-1.9.18-informational?style=flat-square)
 
 Mailu mail system fork with images working for AMD64+ARM64
 
@@ -103,7 +103,7 @@ helm install --generate-name gmelillo/mailu
 | postfix.resources.requests.cpu | string | `"500m"` |  |
 | postfix.resources.requests.memory | string | `"2Gi"` |  |
 | redis.image.repository | string | `"redis"` |  |
-| redis.image.tag | string | `"5-alpine"` |  |
+| redis.image.tag | string | `"6.2.6-alpine3.15"` |  |
 | redis.resources.limits.cpu | string | `"200m"` |  |
 | redis.resources.limits.memory | string | `"300Mi"` |  |
 | redis.resources.requests.cpu | string | `"100m"` |  |
