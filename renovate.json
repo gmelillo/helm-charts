@@ -31,6 +31,12 @@
       "matchStrings": ["HELM_DOCS_VERSION=\"(?<currentValue>.*?)\""],
       "depNameTemplate": "norwoodj/helm-docs",
       "datasourceTemplate": "github-releases"
+    },
+    {
+      "fileMatch": ["(^|/).github/kubeval.sh$"],
+      "matchStrings": ["KUBEVAL_VERSION=\"(?<currentValue>.*?)\""],
+      "depNameTemplate": "instrumenta/kubeval",
+      "datasourceTemplate": "github-releases"
     }
   ]
 }
