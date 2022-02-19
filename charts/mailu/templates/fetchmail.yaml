@@ -36,7 +36,7 @@ spec:
       {{- end }}
       containers:
       - name: fetchmail
-        image: {{ .Values.fetchmail.image.repository }}:{{ default .Values.mailuVersion .Values.fetchmail.image.tag }}
+        image: {{ .Values.fetchmail.image.repository }}:{{ include "mailu.tag" . }}
         imagePullPolicy: Always
         volumeMounts:
           - name: data

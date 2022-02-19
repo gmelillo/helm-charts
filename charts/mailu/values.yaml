@@ -87,8 +87,8 @@ persistence:
 # Change this if you're using different address ranges for pods
 subnet: 10.42.0.0/16
 
-# Version of mailu docker images to use when not specified otherwise
-mailuVersion: 1.9.17
+# Overwrite mailu version
+mailuVersion: ""
 
 # default log level. can be overridden globally or per service
 logLevel: WARNING
