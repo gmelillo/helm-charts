@@ -2,6 +2,12 @@
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": ["github>renovatebot/presets-internal"],
   "prHourlyLimit": 0,
+  "packageRules": [
+    {
+      "packagePatterns": ["*"],
+      "automerge": false
+    }
+  ],
   "regexManagers": [
     {
       "fileMatch": ["(^|/)charts/docker-registry-gc/Chart.yaml$"],
