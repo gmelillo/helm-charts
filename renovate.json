@@ -40,7 +40,7 @@
     },
     {
       "fileMatch": ["(^|/)charts/mailu/Chart.yaml$"],
-      "matchStrings": ["appVersion: '(?<currentValue>.*?)'\n"],
+      "matchStrings": ["appVersion\\:\\ *(?<currentValue>.*?)\n"],
       "depNameTemplate": "Mailu/Mailu",
       "datasourceTemplate": "github-releases"
     }
