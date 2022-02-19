@@ -88,7 +88,7 @@ persistence:
 subnet: 10.42.0.0/16
 
 # Version of mailu docker images to use when not specified otherwise
-mailuVersion: 1.9.15
+mailuVersion: 1.9.17
 
 # default log level. can be overridden globally or per service
 logLevel: WARNING
