@@ -194,6 +194,26 @@ entries:
   mailu:
   - apiVersion: v2
     appVersion: 1.9.18
+    created: "2022-02-19T16:47:37.151762389Z"
+    description: Mailu mail system fork with images working for AMD64+ARM64
+    digest: 1518d1e2bec1684abe48ad382930a361dc6f3a41bc55e41c656cedf0586c7f2e
+    home: https://github.com/gmelillo/helm-charts
+    icon: https://mailu.io/master/_images/logo.png
+    keywords:
+    - mail
+    - k8s
+    maintainers:
+    - email: gabriel@melillo.me
+      name: gabriel
+    name: mailu
+    sources:
+    - https://github.com/Mailu/Mailu
+    type: application
+    urls:
+    - https://github.com/gmelillo/helm-charts/releases/download/mailu-1.0.2/mailu-1.0.2.tgz
+    version: 1.0.2
+  - apiVersion: v2
+    appVersion: 1.9.18
     created: "2022-02-19T16:40:56.181405875Z"
     description: Mailu mail system fork with images working for AMD64+ARM64
     digest: 961bea66248bf54a772145c92abd3ada58a6c4886ac1f6b2f03a735dc9559383
@@ -423,4 +443,4 @@ entries:
     urls:
     - https://github.com/gmelillo/helm-charts/releases/download/ovpn-web-connector-0.1.0/ovpn-web-connector-0.1.0.tgz
     version: 0.1.0
-generated: "2022-02-19T16:40:56.181569677Z"
+generated: "2022-02-19T16:47:37.15192309Z"
