@@ -100,6 +100,29 @@ entries:
     version: 0.1.0
   docker-registry-gc:
   - apiVersion: v2
+    appVersion: 0.1.8
+    created: "2022-02-26T10:44:00.607130897Z"
+    description: A Helm chart that deploy docker registry garbage collector cronjob
+    digest: e7925eed7996faf93f73a1482f451c11f5f0eed4e7735bd5e8270403fbcb4e43
+    home: https://github.com/gmelillo/helm-charts
+    keywords:
+    - registry
+    - docker
+    - cronjob
+    - garbage-collector
+    - kubernetes
+    - k8s
+    maintainers:
+    - email: gabriel@melillo.me
+      name: gabriel
+    name: docker-registry-gc
+    sources:
+    - https://github.com/gmelillo/registry
+    type: application
+    urls:
+    - https://github.com/gmelillo/helm-charts/releases/download/docker-registry-gc-0.1.8/docker-registry-gc-0.1.8.tgz
+    version: 0.1.8
+  - apiVersion: v2
     appVersion: 0.1.7
     created: "2022-02-11T10:24:32.017970469Z"
     description: A Helm chart that deploy docker registry garbage collector cronjob
@@ -483,4 +506,4 @@ entries:
     urls:
     - https://github.com/gmelillo/helm-charts/releases/download/ovpn-web-connector-0.1.0/ovpn-web-connector-0.1.0.tgz
     version: 0.1.0
-generated: "2022-02-26T10:42:12.375276074Z"
+generated: "2022-02-26T10:44:00.607298898Z"
