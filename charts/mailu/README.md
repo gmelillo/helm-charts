@@ -1,6 +1,6 @@
 # mailu
 
-![Version: 1.0.2](https://img.shields.io/badge/Version-1.0.2-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: 1.9.18](https://img.shields.io/badge/AppVersion-1.9.18-informational?style=flat-square)
+![Version: 1.0.3](https://img.shields.io/badge/Version-1.0.3-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: 1.9.19](https://img.shields.io/badge/AppVersion-1.9.19-informational?style=flat-square)
 
 Mailu mail system fork with images working for AMD64+ARM64
 
