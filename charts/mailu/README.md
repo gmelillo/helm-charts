@@ -1,6 +1,6 @@
 # mailu
 
-![Version: 1.0.4](https://img.shields.io/badge/Version-1.0.4-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: 1.9.20](https://img.shields.io/badge/AppVersion-1.9.20-informational?style=flat-square)
+![Version: 1.0.5](https://img.shields.io/badge/Version-1.0.5-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: 1.9.20](https://img.shields.io/badge/AppVersion-1.9.20-informational?style=flat-square)
 
 Mailu mail system fork with images working for AMD64+ARM64
 
@@ -88,7 +88,7 @@ helm install --generate-name gmelillo/mailu
 | mail.messageSizeLimitInMegabytes | int | `50` |  |
 | mailuVersion | string | `""` |  |
 | mysql.image.repository | string | `"library/mariadb"` |  |
-| mysql.image.tag | string | `"10.7.1"` |  |
+| mysql.image.tag | string | `"10.8.2"` |  |
 | mysql.resources.limits.cpu | string | `"200m"` |  |
 | mysql.resources.limits.memory | string | `"512Mi"` |  |
 | mysql.resources.requests.cpu | string | `"100m"` |  |
