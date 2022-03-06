@@ -64,6 +64,10 @@ spec:
             value: {{ include "mailu.fullname" . }}-postfix.{{ .Release.Namespace }}
           - name: REDIS_ADDRESS
             value: {{ include "mailu.fullname" . }}-redis.{{ .Release.Namespace }}
+          {{- if .Values.website }}
+          - name: WEBSITE
+            value: {{ .Values.website  }}
+          {{- end }}
           - name: WEBMAIL
             value: none
           - name: WEBMAIL_ADDRESS
