@@ -4,7 +4,7 @@
 
 Mailu mail system fork with images working for AMD64+ARM64
 
-**Homepage:** <https://github.com/gmelillo/helm-charts>
+**Homepage:** <https://github.com/gmelillo/helm-charts/blob/master/charts/mailu/>
 
 ## Installation
 

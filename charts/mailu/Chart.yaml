@@ -13,5 +13,5 @@ sources:
 keywords:
   - mail
   - k8s
-home: https://github.com/gmelillo/helm-charts
+home: https://github.com/gmelillo/helm-charts/blob/master/charts/mailu/
 
