@@ -90,6 +90,8 @@ subnet: 10.42.0.0/16
 # Overwrite mailu version
 mailuVersion: ""
 
+website: ""
+
 # default log level. can be overridden globally or per service
 logLevel: WARNING
 

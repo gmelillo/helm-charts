@@ -123,3 +123,4 @@ helm install --generate-name gmelillo/mailu
 | tolerations | object | `{}` |  |
 | webdav.enabled | bool | `false` |  |
 | webdav.image.repository | string | `"testingmultiarch/radicale"` |  |
+| website | string | `""` |  |
