@@ -13,6 +13,19 @@ entries:
     version: 0.1.0
   docker-registry:
   - apiVersion: v2
+    appVersion: 2.8.1
+    created: "2022-03-10T23:28:28.208709891Z"
+    description: Fork from stable Docker Registry chart
+    digest: f1bce146bb3ddcd66127fe74ccc0a92fcf4dd2ecb37f0416ed0ed9252b9f20bf
+    home: https://hub.docker.com/_/registry/
+    icon: https://helm.melillo.me/docker-registry-logo.png
+    name: docker-registry
+    sources:
+    - https://github.com/docker/distribution-library-image
+    urls:
+    - https://github.com/gmelillo/helm-charts/releases/download/docker-registry-1.9.9/docker-registry-1.9.9.tgz
+    version: 1.9.9
+  - apiVersion: v2
     appVersion: 2.8.0
     created: "2022-02-14T08:54:04.891986121Z"
     description: Fork from stable Docker Registry chart
@@ -526,4 +539,4 @@ entries:
     urls:
     - https://github.com/gmelillo/helm-charts/releases/download/ovpn-web-connector-0.1.0/ovpn-web-connector-0.1.0.tgz
     version: 0.1.0
-generated: "2022-03-06T01:24:24.9144841Z"
+generated: "2022-03-10T23:28:28.208865592Z"
