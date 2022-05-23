@@ -67,6 +67,29 @@ entries:
   docker-registry-browser:
   - apiVersion: v2
     appVersion: 1.3.5
+    created: "2022-05-23T08:16:48.371927435Z"
+    description: A Helm chart for Kubernetes
+    digest: 518ddcdcb1e57cc390d2e069d6611b80fcb6e4ae5f6a2eacb5c67a601b0c1cce
+    home: https://github.com/gmelillo/helm-charts
+    keywords:
+    - registry
+    - docker
+    - cronjob
+    - garbage-collector
+    - kubernetes
+    - k8s
+    maintainers:
+    - email: gabriel@melillo.me
+      name: gabriel
+    name: docker-registry-browser
+    sources:
+    - https://github.com/klausmeyer/docker-registry-browser
+    type: application
+    urls:
+    - https://github.com/gmelillo/helm-charts/releases/download/docker-registry-browser-0.1.2/docker-registry-browser-0.1.2.tgz
+    version: 0.1.2
+  - apiVersion: v2
+    appVersion: 1.3.5
     created: "2020-10-28T01:21:57.579106182Z"
     description: A Helm chart for Kubernetes
     digest: c14f9ecff15bd2db59da1488cd9038ac0f410b7dcf2bfdccb49cf83336ca56e6
@@ -112,6 +135,29 @@ entries:
     - https://github.com/gmelillo/helm-charts/releases/download/docker-registry-browser-0.1.0/docker-registry-browser-0.1.0.tgz
     version: 0.1.0
   docker-registry-gc:
+  - apiVersion: v2
+    appVersion: 0.1.8
+    created: "2022-05-23T08:16:48.503547318Z"
+    description: A Helm chart that deploy docker registry garbage collector cronjob
+    digest: ca6922de44b4285037bc3057cda70f6b50e608d3c8a042246f65bf7b528f5f90
+    home: https://github.com/gmelillo/helm-charts
+    keywords:
+    - registry
+    - docker
+    - cronjob
+    - garbage-collector
+    - kubernetes
+    - k8s
+    maintainers:
+    - email: gabriel@melillo.me
+      name: gabriel
+    name: docker-registry-gc
+    sources:
+    - https://github.com/gmelillo/registry
+    type: application
+    urls:
+    - https://github.com/gmelillo/helm-charts/releases/download/docker-registry-gc-0.1.9/docker-registry-gc-0.1.9.tgz
+    version: 0.1.9
   - apiVersion: v2
     appVersion: 0.1.8
     created: "2022-02-26T10:44:00.607130897Z"
@@ -228,6 +274,26 @@ entries:
     - https://github.com/gmelillo/helm-charts/releases/download/docker-registry-gc-0.1.4/docker-registry-gc-0.1.4.tgz
     version: 0.1.4
   mailu:
+  - apiVersion: v2
+    appVersion: 1.9.29
+    created: "2022-05-23T08:16:48.626090502Z"
+    description: Mailu mail system fork with images working for AMD64+ARM64
+    digest: 16003ac9c60304cfe2d60ed72e5db5ce9e58ab05bb1ac8e7abc20e48c0d0bd33
+    home: https://github.com/gmelillo/helm-charts/blob/master/charts/mailu/
+    icon: https://mailu.io/master/_images/logo.png
+    keywords:
+    - mail
+    - k8s
+    maintainers:
+    - email: gabriel@melillo.me
+      name: gabriel
+    name: mailu
+    sources:
+    - https://github.com/Mailu/Mailu
+    type: application
+    urls:
+    - https://github.com/gmelillo/helm-charts/releases/download/mailu-1.0.9/mailu-1.0.9.tgz
+    version: 1.0.9
   - apiVersion: v2
     appVersion: 1.9.23
     created: "2022-03-31T08:39:32.024245118Z"
@@ -559,4 +625,4 @@ entries:
     urls:
     - https://github.com/gmelillo/helm-charts/releases/download/ovpn-web-connector-0.1.0/ovpn-web-connector-0.1.0.tgz
     version: 0.1.0
-generated: "2022-03-31T08:39:32.025093525Z"
+generated: "2022-05-23T08:16:48.626399402Z"
