@@ -150,7 +150,7 @@ admin:
 redis:
   image:
     repository: redis
-    tag: 6.2.6-alpine3.15
+    tag: 6.2.7-alpine3.15
   resources:
     requests:
       memory: 200Mi
