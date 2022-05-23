@@ -25,7 +25,7 @@ helm install --generate-name gmelillo/docker-registry-gc
 
 | Name | Email | Url |
 | ---- | ------ | --- |
-| gabriel | gabriel@melillo.me |  |
+| gabriel | <gabriel@melillo.me> |  |
 
 ## Source Code
 
