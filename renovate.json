@@ -1,53 +1,86 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-  "extends": ["github>renovatebot/presets-internal"],
+  "extends": [
+    "github>renovatebot/presets-internal"
+  ],
   "bumpVersion": "minor",
   "prHourlyLimit": 0,
   "packageRules": [
     {
-      "packagePatterns": ["*"],
+      "matchPackagePatterns": [
+        "*"
+      ],
       "automerge": false
     }
   ],
   "regexManagers": [
     {
-      "fileMatch": ["(^|/)charts/docker-registry-gc/Chart.yaml$"],
-      "matchStrings": ["appVersion: '(?<currentValue>.*?)'\n"],
+      "fileMatch": [
+        "(^|/)charts/docker-registry-gc/Chart.yaml$"
+      ],
+      "matchStrings": [
+        "appVersion: '(?<currentValue>.*?)'\n"
+      ],
       "depNameTemplate": "gmelillo/registry",
       "datasourceTemplate": "docker"
     },
     {
-      "fileMatch": ["(^|/)charts/bind /Chart.yaml$"],
-      "matchStrings": ["appVersion: '(?<currentValue>.*?)'\n"],
+      "fileMatch": [
+        "(^|/)charts/bind /Chart.yaml$"
+      ],
+      "matchStrings": [
+        "appVersion: '(?<currentValue>.*?)'\n"
+      ],
       "depNameTemplate": "gmelillo/bind9",
       "datasourceTemplate": "docker"
     },
     {
-      "fileMatch": ["(^|/)charts/docker-registry-browser/Chart.yaml$"],
-      "matchStrings": ["appVersion: '(?<currentValue>.*?)'\n"],
+      "fileMatch": [
+        "(^|/)charts/docker-registry-browser/Chart.yaml$"
+      ],
+      "matchStrings": [
+        "appVersion: '(?<currentValue>.*?)'\n"
+      ],
       "depNameTemplate": "klausmeyer/docker-registry-browser",
       "datasourceTemplate": "docker"
-    },{
-      "fileMatch": ["(^|/)charts/ovpn-web-connector/Chart.yaml$"],
-      "matchStrings": ["appVersion: '(?<currentValue>.*?)'\n"],
+    },
+    {
+      "fileMatch": [
+        "(^|/)charts/ovpn-web-connector/Chart.yaml$"
+      ],
+      "matchStrings": [
+        "appVersion: '(?<currentValue>.*?)'\n"
+      ],
       "depNameTemplate": "gmelillo/nginx",
       "datasourceTemplate": "docker"
     },
     {
-      "fileMatch": ["(^|/).github/helm-docs.sh$"],
-      "matchStrings": ["HELM_DOCS_VERSION=\"(?<currentValue>.*?)\""],
+      "fileMatch": [
+        "(^|/).github/helm-docs.sh$"
+      ],
+      "matchStrings": [
+        "HELM_DOCS_VERSION=\"(?<currentValue>.*?)\""
+      ],
       "depNameTemplate": "norwoodj/helm-docs",
       "datasourceTemplate": "github-releases"
     },
     {
-      "fileMatch": ["(^|/).github/kubeval.sh$"],
-      "matchStrings": ["KUBEVAL_VERSION=\"(?<currentValue>.*?)\""],
+      "fileMatch": [
+        "(^|/).github/kubeval.sh$"
+      ],
+      "matchStrings": [
+        "KUBEVAL_VERSION=\"(?<currentValue>.*?)\""
+      ],
       "depNameTemplate": "instrumenta/kubeval",
       "datasourceTemplate": "github-releases"
     },
     {
-      "fileMatch": ["(^|/)charts/mailu/Chart.yaml$"],
-      "matchStrings": ["appVersion\\:\\ *(?<currentValue>.*?)\n"],
+      "fileMatch": [
+        "(^|/)charts/mailu/Chart.yaml$"
+      ],
+      "matchStrings": [
+        "appVersion\\:\\ *(?<currentValue>.*?)\n"
+      ],
       "depNameTemplate": "Mailu/Mailu",
       "datasourceTemplate": "github-releases"
     }
