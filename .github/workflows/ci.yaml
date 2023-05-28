@@ -8,7 +8,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: Checkout
-      uses: actions/checkout@7884fcad6b5d53d10323aee724dc68d8b9096a2e # tag=v2.4.2
+      uses: actions/checkout@ee0669bd1cc54295c223e0bb666b733df41de1c5 # v2.7.0
     - name: Run chart-testing (lint)
       uses: helm/chart-testing-action@09ed88797198755e5031f25be13da255e7e33aad # tag=v2.3.0
       with:
@@ -19,7 +19,7 @@ jobs:
     needs: lint-chart
     steps:
     - name: Checkout
-      uses: actions/checkout@7884fcad6b5d53d10323aee724dc68d8b9096a2e # tag=v2.4.2
+      uses: actions/checkout@ee0669bd1cc54295c223e0bb666b733df41de1c5 # v2.7.0
     - name: Run helm-docs
       run: .github/helm-docs.sh
   kubeval-chart:
@@ -42,7 +42,7 @@ jobs:
         - v1.14.10
     steps:
     - name: Checkout
-      uses: actions/checkout@7884fcad6b5d53d10323aee724dc68d8b9096a2e # tag=v2.4.2
+      uses: actions/checkout@ee0669bd1cc54295c223e0bb666b733df41de1c5 # v2.7.0
     - name: Run kubeval
       env:
         KUBERNETES_VERSION: ${{ matrix.k8s }}
@@ -69,7 +69,7 @@ jobs:
         - v1.14.10
     steps:
     - name: Checkout
-      uses: actions/checkout@7884fcad6b5d53d10323aee724dc68d8b9096a2e # tag=v2.4.2
+      uses: actions/checkout@ee0669bd1cc54295c223e0bb666b733df41de1c5 # v2.7.0
     - name: Create kind ${{ matrix.k8s }} cluster
       uses: helm/kind-action@d08cf6ff1575077dee99962540d77ce91c62387d # tag=v1.3.0
       with:
