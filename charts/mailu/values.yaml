@@ -253,7 +253,7 @@ webdav:
 mysql:
   image:
     repository: library/mariadb
-    tag: 10.9.3
+    tag: 10.11.7
   resources:
     requests:
       memory: 256Mi
