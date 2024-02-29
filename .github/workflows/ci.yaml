@@ -10,7 +10,7 @@ jobs:
     - name: Checkout
       uses: actions/checkout@7884fcad6b5d53d10323aee724dc68d8b9096a2e # tag=v2.4.2
     - name: Run chart-testing (lint)
-      uses: helm/chart-testing-action@09ed88797198755e5031f25be13da255e7e33aad # tag=v2.3.0
+      uses: helm/chart-testing-action@e6669bcd63d7cb57cb4380c33043eebe5d111992 # v2.6.1
       with:
         command: lint
         config: .github/ct.yaml
@@ -75,7 +75,7 @@ jobs:
       with:
         node_image: kindest/node:${{ matrix.k8s }}
     - name: Run chart-testing (install)
-      uses: helm/chart-testing-action@09ed88797198755e5031f25be13da255e7e33aad # tag=v2.3.0
+      uses: helm/chart-testing-action@e6669bcd63d7cb57cb4380c33043eebe5d111992 # v2.6.1
       with:
         command: install
         config: .github/ct.yaml
