@@ -7,16 +7,17 @@
   "prHourlyLimit": 0,
   "packageRules": [
     {
-      "matchPackagePatterns": [
+      "automerge": false,
+      "matchPackageNames": [
         "*"
-      ],
-      "automerge": false
+      ]
     }
   ],
-  "regexManagers": [
+  "customManagers": [
     {
-      "fileMatch": [
-        "(^|/)charts/docker-registry-gc/Chart.yaml$"
+      "customType": "regex",
+      "managerFilePatterns": [
+        "/(^|/)charts/docker-registry-gc/Chart.yaml$/"
       ],
       "matchStrings": [
         "appVersion: '(?<currentValue>.*?)'\n"
@@ -25,8 +26,9 @@
       "datasourceTemplate": "docker"
     },
     {
-      "fileMatch": [
-        "(^|/)charts/bind /Chart.yaml$"
+      "customType": "regex",
+      "managerFilePatterns": [
+        "/(^|/)charts/bind /Chart.yaml$/"
       ],
       "matchStrings": [
         "appVersion: '(?<currentValue>.*?)'\n"
@@ -35,8 +37,9 @@
       "datasourceTemplate": "docker"
     },
     {
-      "fileMatch": [
-        "(^|/)charts/docker-registry-browser/Chart.yaml$"
+      "customType": "regex",
+      "managerFilePatterns": [
+        "/(^|/)charts/docker-registry-browser/Chart.yaml$/"
       ],
       "matchStrings": [
         "appVersion: '(?<currentValue>.*?)'\n"
@@ -45,8 +48,9 @@
       "datasourceTemplate": "docker"
     },
     {
-      "fileMatch": [
-        "(^|/)charts/ovpn-web-connector/Chart.yaml$"
+      "customType": "regex",
+      "managerFilePatterns": [
+        "/(^|/)charts/ovpn-web-connector/Chart.yaml$/"
       ],
       "matchStrings": [
         "appVersion: '(?<currentValue>.*?)'\n"
@@ -55,8 +59,9 @@
       "datasourceTemplate": "docker"
     },
     {
-      "fileMatch": [
-        "(^|/).github/helm-docs.sh$"
+      "customType": "regex",
+      "managerFilePatterns": [
+        "/(^|/).github/helm-docs.sh$/"
       ],
       "matchStrings": [
         "HELM_DOCS_VERSION=\"(?<currentValue>.*?)\""
@@ -65,8 +70,9 @@
       "datasourceTemplate": "github-releases"
     },
     {
-      "fileMatch": [
-        "(^|/).github/kubeval.sh$"
+      "customType": "regex",
+      "managerFilePatterns": [
+        "/(^|/).github/kubeval.sh$/"
       ],
       "matchStrings": [
         "KUBEVAL_VERSION=\"(?<currentValue>.*?)\""
@@ -75,8 +81,9 @@
       "datasourceTemplate": "github-releases"
     },
     {
-      "fileMatch": [
-        "(^|/)charts/mailu/Chart.yaml$"
+      "customType": "regex",
+      "managerFilePatterns": [
+        "/(^|/)charts/mailu/Chart.yaml$/"
       ],
       "matchStrings": [
         "appVersion\\:\\ *(?<currentValue>.*?)\n"
